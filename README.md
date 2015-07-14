@@ -9,7 +9,11 @@ Use [Scrapy](http://scrapy.org/) to crawl the 50 latest submitted questions on [
 
 Use Scrapy's [Crawlspider](http://doc.scrapy.org/en/latest/topics/spiders.html#crawlspider) to extend the scraper so that it crawls through the pagination links at the bottom of each page and scrapes the questions (question title and URL) from each page. (Translate: let's scrape > 50 questions at a time!)
 
-Note: 
+
+![Output data in MongoDB](https://github.com/yanniey/Scrapy_MongoDB_StackOverFlow/blob/master/Output%20data%20in%20MongoDB.png?raw=true)
+![Output data in JSON file](https://github.com/yanniey/Scrapy_MongoDB_StackOverFlow/blob/master/Output%20data%20in%20JSON%20file.png?raw=true)
+
+Note:
 Replace deprecated `pymongo.Connection()` with `MongoClient.Connection()` according to PyMongo 3.0's update
 
 Output JSON files in Scrapy:
