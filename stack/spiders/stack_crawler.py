@@ -13,7 +13,7 @@ class StackCrawlerSpider(CrawlSpider):
 
     # limit the crawl to the first 5 pages
     rules = (
-        Rule(LinkExtractor(allow=r'questions\?page=[0-2]&sort=newest'), callback='parse_item', follow=True),
+        Rule(LinkExtractor(allow=r'questions\?page=[0-5]&sort=newest'), callback='parse_item', follow=True),
     )
 
     def parse_item(self, response):
